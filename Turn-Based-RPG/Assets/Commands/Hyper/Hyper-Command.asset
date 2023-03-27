@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363ea3027eac64d48969fc3e87d1744f, type: 3}
+  m_Name: Hyper-Command
+  m_EditorClassIdentifier: 
+  displayName: Hyper
+  description: Increase your Attack stat by 100% for 5 turns
+  isConsumable: 0
+  targetsSelf: 1
+  effectStrategies:
+  - {fileID: 11400000, guid: 920702baa57ef4d408256b26577e5685, type: 2}
+  - {fileID: 11400000, guid: 453dff8f68abafb4a9f1c2b66fa9ffaa, type: 2}
+  condition:
+    and:
+    - or:
+      - predicate: HasStatus
+        parameters:
+        - hyper
+        negate: 1

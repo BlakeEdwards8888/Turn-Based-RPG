@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363ea3027eac64d48969fc3e87d1744f, type: 3}
+  m_Name: Fireball-Command
+  m_EditorClassIdentifier: 
+  displayName: Fireball
+  description: Cast fireball
+  isConsumable: 0
+  effectStrategies:
+  - {fileID: 11400000, guid: f31340e326cf98c429355e52e03debd7, type: 2}
+  - {fileID: 11400000, guid: 3487595dc1c12f9478737a0a7bc05cea, type: 2}
+  condition:
+    and: []

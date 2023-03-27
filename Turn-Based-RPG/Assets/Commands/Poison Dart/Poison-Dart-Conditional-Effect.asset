@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d201562e15bd0684e9f015526cef4d90, type: 3}
+  m_Name: Poison-Dart-Conditional-Effect
+  m_EditorClassIdentifier: 
+  condition:
+    and:
+    - or:
+      - predicate: HasStatus
+        parameters:
+        - psn
+        negate: 1
+  effects:
+  - {fileID: 11400000, guid: 14498f6abd988294d9e847abc4b032fa, type: 2}
+  - {fileID: 11400000, guid: d9cd0c098c1f6314284473423f5b6c4a, type: 2}
